@@ -1,12 +1,37 @@
-# Workflow repo for the CA
+# Workflow repo for the CA ✇
+## Description
+This is a project based on the workflow course from Noroff Vocational School given in May of 2025. The course is meant to teach us how to use development tools such as ESLint, Prettier, Husky - as well as Vitest and Playwright for testing. 
 
-[x] Eslint is installed and configured to handle test globals
-[x] Prettier is installed and configured
-[x] Pre-commit hooks have been set up to handle linting and formatting
-[x] Vitest has been installed and configured
-[x] The relevant unit tests have been written and pass
-[] Playwright has been installed and configured
-[] The relevant e2e tests have been written and pass
-[] The README has been updated with the relevant scripts and environment variable examples
-[] .env is in .gitignore
-[] There is a .env.example file in the branch
+## Table of Content
+1. [Initial Setup](#initial-setup)
+2. [Enviorment Variables](#enviorment-variables)
+3. [Available Scripts](#available-scripts)
+
+## Initial Setup
+Clone the repository and install dependencies:
+
+```bash
+npm install
+```
+
+## Enviorment Variables
+Create a .env file with the following:
+
+```bash
+TEST_USER_EMAIL=
+TEST_USER_PASSWORD=
+```
+These are used by the Playwright login tests. Your .env file is ignored via .gitignore, and an .env.example is included.
+
+## Available Scripts
+
+| Script       | Command                    | Description                                             |
+| ------------ | -------------------------- | ------------------------------------------------------- |
+| `dev`        | `npm run dev`              | Start live-server                                       |
+| `test`       | `npm run test:unit`        | Run all unit tests with Vitest                          |
+| `test:e2e`   | `npm run test:e2e`         | Run Playwright end-to-end tests                         |
+| `lint`       | `npm run lint`             | Run ESLint manually                                     |
+| `lint-staged`| `npx lint-staged`          | Lint staged files (used by Husky)                       |
+| `prepare`    | `npm run prepare`          | Husky install (should be installed on npm install)      |
+
+Built by **Thea (QueenWoofie)** 🐾
