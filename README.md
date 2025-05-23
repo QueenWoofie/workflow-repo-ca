@@ -28,7 +28,7 @@ These are used by the Playwright login tests. Your .env file is ignored via .git
 | Script       | Command                    | Description                                             |
 | ------------ | -------------------------- | ------------------------------------------------------- |
 | `dev`        | `npm run dev`              | Start live-server                                       |
-| `test`       | `npm run test:unit`        | Run all unit tests with Vitest                          |
+| `test`       | `npm run test`             | Run all unit tests with Vitest                          |
 | `test:e2e`   | `npm run test:e2e`         | Run Playwright end-to-end tests                         |
 | `lint`       | `npm run lint`             | Run ESLint manually                                     |
 | `lint-staged`| `npx lint-staged`          | Lint staged files (used by Husky)                       |
